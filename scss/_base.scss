@@ -1,0 +1,35 @@
+:root {
+  --clr-very-dark-magenta: hsl(300, 43%, 22%);
+  --clr-soft-pink: hsl(333, 80%, 67%);
+
+  --clr-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --clr-light-grayish-magenta: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--clr-very-dark-magenta);
+  color: var(--clr-white);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 15px;
+  font-family: Spartan;
+  background-image: url("/images/bg-pattern-top-desktop.svg"),
+    url("/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}

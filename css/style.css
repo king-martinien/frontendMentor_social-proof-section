@@ -1,0 +1,164 @@
+:root {
+  --clr-very-dark-magenta: hsl(300, 43%, 22%);
+  --clr-soft-pink: hsl(333, 80%, 67%);
+  --clr-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --clr-light-grayish-magenta: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: var(--clr-very-dark-magenta);
+  color: var(--clr-white);
+}
+
+*::selection {
+  background-color: var(--clr-very-dark-magenta);
+  color: var(--clr-white);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 15px;
+  font-family: Spartan;
+  background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+
+.rating {
+  background-color: var(--clr-light-grayish-magenta);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-radius: 6px;
+}
+
+.rating__label {
+  color: var(--clr-very-dark-magenta);
+  font-weight: 600;
+}
+
+.card {
+  padding: 25px 20px;
+  border-radius: 8px;
+  background-color: var(--clr-very-dark-magenta);
+  color: var(--clr-light-grayish-magenta);
+}
+
+.card__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.card__profile img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.card__profile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.card__profile div .profile__name {
+  font-weight: 700;
+}
+
+.card__profile div .profile__role {
+  color: var(--clr-soft-pink);
+}
+
+.card__text {
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .container {
+  width: 90%;
+  margin: 70px auto;
+}
+
+#main .introduction {
+  margin-bottom: 40px;
+}
+
+#main .introduction .intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#main .introduction .intro__title {
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--clr-very-dark-magenta);
+  margin-bottom: 20px;
+}
+
+#main .introduction .intro__text {
+  line-height: 20px;
+  color: var(--clr-dark-grayish-magenta);
+}
+
+#main .introduction .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+#main .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+/*# sourceMappingURL=style.css.map */
