@@ -1,17 +1,32 @@
 .rating {
-    // border: 2px solid red;
-    background-color: var(--clr-light-grayish-magenta);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 0;
-    border-radius: 6px;
-    
-    &__label {
-        color: var(--clr-very-dark-magenta);
-        font-weight: 600;
+  // border: 2px solid red;
+  background-color: var(--clr-light-grayish-magenta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-radius: 6px;
+
+  &__label {
+    color: var(--clr-very-dark-magenta);
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 40px;
+    flex-direction: row;
+    gap: 30px;
+    align-self: flex-start;
+
+    &:nth-child(2) {
+      align-self: center;
     }
+
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
 }
 
 .card {
@@ -52,5 +67,15 @@
     // border: 2px solid red;
     line-height: 24px;
     font-weight: 500;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      transform: translateY(25px);
+    }
+
+    &:last-child {
+      transform: translateY(50px);
+    }
   }
 }
