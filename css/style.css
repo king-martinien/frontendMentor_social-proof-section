@@ -157,8 +157,13 @@ body {
 
 @media screen and (min-width: 768px) {
   #main .container {
-    width: 85%;
     margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  #main .container {
+    width: 80%;
   }
 }
 
@@ -205,6 +210,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 60px;
   }
   #main .introduction .intro {
     text-align: left;
